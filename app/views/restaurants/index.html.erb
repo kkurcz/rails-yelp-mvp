@@ -1,0 +1,9 @@
+
+
+<% @restaurants.each_with_index do |res, i| %>
+<h4>
+  <%= link_to "#{i+1}. #{res.name}", restaurant_path(res)  %>
+</h4>
+<% end  %>
+
+<%= link_to "Add a new restaurant", new_restaurant_path %>
